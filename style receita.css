@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: "Times New Roman";
+    font-weight: 300;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+.conteudo {
+    width: auto;
+    margin:30px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(190, 180, 180, 0.13);
+}
+
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+}
+
+.cabeçalho img {
+    width: 150px;
+}
+
+header section {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    margin: 0px 15px;
+    color: rgb(245, 240, 240);
+}
+
+.botao {
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: rgba(9, 99, 202, 0.911);
+    box-shadow: 2px 4px 10px 4px rgb(107, 107, 104);
+    font-size: 20px;
+}
+
+.botao:hover {
+    text-decoration: underline;
+    background-color: black;
+}
+
+.sobre {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.sobre article {
+    font-size: 20px;
+    margin: 0 0 0 20px;
+    text-align: justify;
+}
+
+.sobre article h1 {
+    font-size: 35px;
+    line-height: 90%;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(4, 116, 19, 0.8);
+    font-weight: bold;
+    margin: 15px 0 15px -15px;
+}
+
+.sobre article h2 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 200%;
+    margin: 0 0 0 -15px;
+}
+
+.sobre article figcaption img {
+    width: 600px;
+    margin: 30px 0 0 -15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sobre article h3 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 200%;
+    margin: 10px 0 0 -15px;
+}
+
+footer a img {
+    width: 30px;
+    margin: 5px 20px 0 0
+}
+
+footer p {
+    color: rgb(10, 99, 233);
+}
+
+/* Define o tamanho dos elementos em telas de 1150px. */
+@media(max-width: 1150px) {
+    .conteudo {
+        width: 950px;
+    }
+}
+/* Define o tamanho dos elementos em telas de 1024px. */
+@media(max-width: 1024px) {
+    .conteudo {
+        width: 850px;
+    }
+    .sobre figcaption img {
+        width: 600px;
+    }
+}
+/* Define o tamanho dos elementos em telas de 915px. */
+@media(max-width: 915px) {
+    .conteudo {
+        width: 600px;
+    }
+    .linha {
+        flex-direction: column;
+    }
+    header nav {
+        margin: 30px 0;
+    }
+    .sobre article {
+        width: 100%;
+    }
+    .sobre figcaption img {
+        width: 100%;
+        margin: 30 px 0 0 0;
+    }
+    footer .linha {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+/* Define o tamanho dos elementos em telas de 665px. */
+@media(max-width: 665px) {
+    .conteudo {
+        width: 400px;
+    }
+}
+/* Define o tamanho dos elementos em telas de 450px. */
+@media(max-width: 450px) {
+    .conteudo {
+        width: 290px;
+    }
+    header nav {
+        width: 100%;
+        padding: 10px 0 20px;
+    }
+    header nav ul {
+        flex-direction: column;
+    }
+    header nav ul li {
+        margin: 10px 0;;
+    }
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+}
